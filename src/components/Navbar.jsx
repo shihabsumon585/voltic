@@ -6,31 +6,24 @@ import React from 'react'
 const Navbar = () => {
 
   const user = { email: "shihabsumon585@gmail.com" || null };
-  console.log(user?.email)
 
-  const links = (user?.email ?
-    <>
-      <li><Link href={"/"}>Home</Link></li>
-      <li><Link href={"/products"}>Products</Link></li>
-      <li><Link href={"/about"}>About</Link></li>
-      <li><Link href={"/faq"}>FAQ</Link></li>
-      <li><Link href={"/contact"}>Contact</Link></li>
+  const links = <>
+    <li><Link href={"/"}>Home</Link></li>
+    <li><Link href={"/products"}>Products</Link></li>
+    <li><Link href={"/about"}>About</Link></li>
+    <li><Link href={"/faq"}>FAQ</Link></li>
+    <li><Link href={"/contact"}>Contact</Link></li>
 
-      <li><Link href={"/dashboard"}>Dashboard</Link></li>
-      <li><Link href={"/profile"}>Profile</Link></li>
-      <li><Link href={"/settings"}>Settings</Link></li>
-    </>
-    :
-    <>
-      <li><Link href={"/"}>Home</Link></li>
-      <li><Link href={"/products"}>Products</Link></li>
-      <li><Link href={"/about"}>About</Link></li>
-      <li><Link href={"/faq"}>FAQ</Link></li>
-      <li><Link href={"/contact"}>Contact</Link></li>
-    </>)
+    {user?.email &&
+      <>
+        <li><Link href={"/dashboard"}>Dashboard</Link></li>
+        <li><Link href={"/profile"}>Profile</Link></li>
+        <li><Link href={"/settings"}>Settings</Link></li>
+      </>}
+  </>;
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-6">
+    <div className="navbar bg-base-100 shadow-sm px-6 top-0 z-50" >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

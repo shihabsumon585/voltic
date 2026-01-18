@@ -1,0 +1,222 @@
+[
+  {
+    "id": "VT-101",
+    "name": "VoltStream Pro Smart Inverter",
+    "category": "Power Solutions",
+    "brand": "VolTic",
+    "price": 899.99,
+    "currency": "USD",
+    "stock_status": "In Stock",
+    "rating": 4.8,
+    "features": ["Pure Sine Wave", "WiFi App Control", "Overload Protection"],
+    "specifications": {
+      "capacity": "5kVA",
+      "input_voltage": "120V - 240V",
+      "efficiency": "95%",
+      "battery_support": "Lithium/Lead Acid"
+    },
+    "metadata": {
+      "energy_star_rated": true,
+      "warranty_years": 5,
+      "tags": ["premium", "smart-home", "solar-ready"]
+    }
+  },
+  {
+    "id": "VT-202",
+    "name": "HyperCool Industrial Air Circulator",
+    "category": "Cooling",
+    "brand": "VolTic",
+    "price": 249.50,
+    "currency": "USD",
+    "stock_status": "Limited Stock",
+    "rating": 4.5,
+    "features": ["360 Degree Tilt", "Corrosion Resistant Blades", "Low Noise Tech"],
+    "specifications": {
+      "motor_type": "Brushless DC",
+      "airflow": "6500 CFM",
+      "power_consumption": "120W",
+      "blade_material": "Reinforced Aluminum"
+    },
+    "metadata": {
+      "energy_star_rated": false,
+      "warranty_years": 2,
+      "tags": ["industrial", "high-power"]
+    }
+  },
+  {
+    "id": "VT-303",
+    "name": "EcoCharge Level 2 EV Station",
+    "category": "EV Charging",
+    "brand": "VolTic",
+    "price": 1200.00,
+    "currency": "USD",
+    "stock_status": "In Stock",
+    "rating": 4.9,
+    "features": ["Weatherproof IP66", "RFID Access", "Dynamic Load Balancing"],
+    "specifications": {
+      "output_current": "40A",
+      "connector_type": "J1772",
+      "cable_length": "25ft",
+      "mounting": "Wall Mount"
+    },
+    "metadata": {
+      "energy_star_rated": true,
+      "warranty_years": 3,
+      "tags": ["green-energy", "electric-vehicle"]
+    }
+  },
+  {
+    "id": "VT-404",
+    "name": "LumiCore Smart LED Panel (6-Pack)",
+    "category": "Lighting",
+    "brand": "VolTic",
+    "price": 150.00,
+    "currency": "USD",
+    "stock_status": "In Stock",
+    "rating": 4.7,
+    "features": ["16M Colors", "Music Sync", "Voice Command Support"],
+    "specifications": {
+      "brightness": "1200 Lumens",
+      "color_temp": "2700K - 6500K",
+      "lifespan": "50,000 Hours",
+      "connectivity": "Zigbee / Bluetooth"
+    },
+    "metadata": {
+      "energy_star_rated": true,
+      "warranty_years": 1,
+      "tags": ["interior-design", "smart-lighting"]
+    }
+  },
+  {
+    "id": "VT-505",
+    "name": "SafeGuard Surge Protector Strip",
+    "category": "Accessories",
+    "brand": "VolTic",
+    "price": 45.99,
+    "currency": "USD",
+    "stock_status": "In Stock",
+    "rating": 4.6,
+    "features": ["12 Outlets", "USB-C Fast Charging", "Fireproof Shell"],
+    "specifications": {
+      "joule_rating": "4200J",
+      "clamping_voltage": "330V",
+      "cord_length": "10ft",
+      "usb_output": "30W PD"
+    },
+    "metadata": {
+      "energy_star_rated": false,
+      "warranty_years": 10,
+      "tags": ["safety", "office-setup"]
+    }
+  },
+  {
+    "id": "VT-606",
+    "name": "ThermoFlow Digital Water Heater",
+    "category": "Home Appliances",
+    "brand": "VolTic",
+    "price": 540.00,
+    "currency": "USD",
+    "stock_status": "In Stock",
+    "rating": 4.4,
+    "features": ["Tankless Design", "Self-Modulating Tech", "Digital Display"],
+    "specifications": {
+      "flow_rate": "3.5 GPM",
+      "min_activation": "0.5 GPM",
+      "voltage": "240V",
+      "heating_element": "Copper"
+    },
+    "metadata": {
+      "energy_star_rated": true,
+      "warranty_years": 5,
+      "tags": ["energy-efficient", "compact"]
+    }
+  },
+  {
+    "id": "VT-707",
+    "name": "IronClad Multi-Meter Pro",
+    "category": "Tools",
+    "brand": "VolTic",
+    "price": 85.00,
+    "currency": "USD",
+    "stock_status": "Out of Stock",
+    "rating": 4.8,
+    "features": ["Auto-Ranging", "True RMS", "Non-Contact Voltage Detection"],
+    "specifications": {
+      "display_count": "6000 Counts",
+      "safety_rating": "CAT III 1000V",
+      "battery": "9V Included",
+      "data_logging": "No"
+    },
+    "metadata": {
+      "energy_star_rated": false,
+      "warranty_years": 2,
+      "tags": ["professional", "testing"]
+    }
+  },
+  {
+    "id": "VT-808",
+    "name": "AeroSwift Ceiling Fan",
+    "category": "Cooling",
+    "brand": "VolTic",
+    "price": 310.00,
+    "currency": "USD",
+    "stock_status": "In Stock",
+    "rating": 4.3,
+    "features": ["Reversible Motor", "Remote Controlled", "Integrated LED"],
+    "specifications": {
+      "sweep_size": "52 inches",
+      "speed_settings": "6 Speeds",
+      "noise_level": "35dB",
+      "motor": "Silent DC"
+    },
+    "metadata": {
+      "energy_star_rated": true,
+      "warranty_years": 15,
+      "tags": ["living-room", "modern"]
+    }
+  },
+  {
+    "id": "VT-909",
+    "name": "SolPanel 400W Monocrystalline",
+    "category": "Solar",
+    "brand": "VolTic",
+    "price": 280.00,
+    "currency": "USD",
+    "stock_status": "In Stock",
+    "rating": 4.9,
+    "features": ["Anti-Reflective Glass", "PERC Technology", "High Temp Tolerance"],
+    "specifications": {
+      "peak_power": "400W",
+      "cell_efficiency": "22.4%",
+      "weight": "18.5kg",
+      "frame": "Anodized Aluminum"
+    },
+    "metadata": {
+      "energy_star_rated": true,
+      "warranty_years": 25,
+      "tags": ["renewable", "outdoor"]
+    }
+  },
+  {
+    "id": "VT-1010",
+    "name": "VoltBlock Lithium Battery Wall",
+    "category": "Power Solutions",
+    "brand": "VolTic",
+    "price": 3500.00,
+    "currency": "USD",
+    "stock_status": "Pre-order",
+    "rating": 5.0,
+    "features": ["Scalable Design", "Built-in BMS", "Rapid Discharge Protection"],
+    "specifications": {
+      "storage_capacity": "10kWh",
+      "cycle_life": "6000 Cycles",
+      "nominal_voltage": "48V",
+      "cooling_system": "Passive"
+    },
+    "metadata": {
+      "energy_star_rated": true,
+      "warranty_years": 10,
+      "tags": ["home-storage", "high-capacity"]
+    }
+  }
+]
