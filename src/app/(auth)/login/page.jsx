@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import LoginButton from '@/components/LoginButton';
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -86,9 +87,11 @@ const Login = () => {
                                 <label htmlFor="remember" className="text-sm text-slate-600 cursor-pointer">Remember for 30 days</label>
                             </div> */}
 
-                            <button className="btn btn-primary w-full bg-blue-600 border-none text-white hover:bg-blue-700 h-12 text-lg shadow-lg shadow-blue-200">
+                            {/* <button className="btn btn-primary w-full bg-blue-600 border-none text-white hover:bg-blue-700 h-12 text-lg shadow-lg shadow-blue-200">
                                 Sign In
-                            </button>
+                            </button> */}
+
+                            <LoginButton></LoginButton>
 
                             <div className="divider text-slate-400 text-xs uppercase tracking-widest my-8">Or continue with</div>
 

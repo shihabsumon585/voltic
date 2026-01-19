@@ -51,14 +51,14 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <LoginButton></LoginButton>
-        {/* <Link
+        {/* <LoginButton></LoginButton> */}
+        <Link
           href={"/login"}
           onClick={() => signIn()}
-          className='btn btn-primary'
+          className='btn bg-blue-600 border-none text-white hover:bg-blue-700 h-12 text-lg shadow-lg shadow-blue-200'
         >
           Login
-        </Link> */}
+        </Link>
       </div>
     </div>
   )
