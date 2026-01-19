@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <NextAuthProvider>
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  mx-auto bg-white` }
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  mx-auto bg-white ` }
       >
         {/* header section */}
         <header>

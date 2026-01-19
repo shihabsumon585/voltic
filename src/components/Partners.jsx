@@ -14,7 +14,7 @@ const Partners = () => {
     const duplicatedPartners = [...partners, ...partners];
 
     return (
-        <section className="py-20 bg-slate-900 overflow-hidden">
+        <section className="py-20 bg-slate-900 overflow-hidden max-h-screen">
             {/* Inline CSS for Animation */}
             <style>
                 {`

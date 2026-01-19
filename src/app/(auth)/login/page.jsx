@@ -2,13 +2,30 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import LoginButton from '@/components/LoginButton';
+import { signIn } from "next-auth/react";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
 
-    const handleLogin = (e) => {
+    // const handleLogin = (e) => {
+    //     e.preventDefault();
+    //     console.log("Login submitted");
+
+    // };
+
+    const handleLogin = async (e) => {
         e.preventDefault();
-        console.log("Login submitted");
+
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        const res = await signIn("credentials", {
+            email,
+            password,
+            redirect: true,
+            callbackUrl: "/", // 🔥 এটায় Home এ যাবে
+        });
+
     };
 
     return (
@@ -42,6 +59,7 @@ const Login = () => {
                                 <label className="label font-bold text-slate-700">Email Address</label>
                                 <input
                                     type="email"
+                                    name='email'
                                     placeholder="name@company.com"
                                     className="input input-bordered w-full bg-slate-50 focus:border-blue-500 focus:outline-none"
                                     required
@@ -58,6 +76,7 @@ const Login = () => {
                                 <div className="relative">
                                     <input
                                         type={showPassword ? "text" : "password"}
+                                        name='password'
                                         placeholder="••••••••"
                                         className="input input-bordered w-full bg-slate-50 focus:border-blue-500 focus:outline-none pr-12"
                                         required
@@ -87,11 +106,11 @@ const Login = () => {
                                 <label htmlFor="remember" className="text-sm text-slate-600 cursor-pointer">Remember for 30 days</label>
                             </div> */}
 
-                            {/* <button className="btn btn-primary w-full bg-blue-600 border-none text-white hover:bg-blue-700 h-12 text-lg shadow-lg shadow-blue-200">
+                            <button className="btn btn-primary w-full bg-blue-600 border-none text-white hover:bg-blue-700 h-12 text-lg shadow-lg shadow-blue-200">
                                 Sign In
-                            </button> */}
+                            </button>
 
-                            <LoginButton></LoginButton>
+                            {/* <LoginButton></LoginButton> */}
 
                             <div className="divider text-slate-400 text-xs uppercase tracking-widest my-8">Or continue with</div>
 
