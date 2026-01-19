@@ -1,7 +1,8 @@
 "use client";
 import Link from 'next/link';
 import React from 'react'
-// import logo from "/logo.png";
+import LoginButton from './LoginButton';
+// import { signIn } from 'next-auth/react';
 
 const Navbar = () => {
 
@@ -35,8 +36,13 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link href={"/"}>
-          <img src={"/logo.png"} className='w-20' alt="" />
+        <Link href="/" className="flex items-center gap-2 text-white">
+          <div className="bg-blue-600 p-2 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+              <path d="M14.615 1.595a.75.75 0 0 1 .359.852L12.972 9.5h4.778a.75.75 0 0 1 .58 1.222l-8 10a.75.75 0 0 1-1.233-.806L11.028 14.5H6.25a.75.75 0 0 1-.58-1.222l8-10a.75.75 0 0 1 .945-.183Z" />
+            </svg>
+          </div>
+          <span className="text-2xl font-black tracking-tighter uppercase text-slate-900">Vol<span className="text-blue-500">Tic</span></span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -45,7 +51,14 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href={"/login"} className='btn btn-primary'>Login</Link>
+        <LoginButton></LoginButton>
+        {/* <Link
+          href={"/login"}
+          onClick={() => signIn()}
+          className='btn btn-primary'
+        >
+          Login
+        </Link> */}
       </div>
     </div>
   )
