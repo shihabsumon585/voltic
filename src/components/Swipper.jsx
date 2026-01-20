@@ -76,7 +76,7 @@ const VolTicSlider = () => {
                                         Shop Now
                                     </button>
                                     <button
-                                        onClick={() => router.push("/catalog")}
+                                        onClick={() => router.push("/products")}
                                         className="px-6 py-2.5 rounded border border-white text-white font-medium hover:bg-white hover:text-black transition-all text-sm md:text-base"
                                     >
                                         Catalog
