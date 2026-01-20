@@ -14,32 +14,18 @@ import {
 } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import productsData from '../../../../../public/products.json'; // import static JSON
 
 const ProductDetails = () => {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const loadProduct = async () => {
-            try {
-                const res = await fetch('/products.json');
-                const products = await res.json();
-                const found = products.find(p => p.id.toString() === id);
-                setProduct(found);
-            } catch (error) {
-                console.error('Failed to load product', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        if (id) loadProduct();
+        if (id) {
+            const found = productsData.find(p => p.id.toString() === id);
+            setProduct(found || null);
+        }
     }, [id]);
-
-    if (loading) {
-        return <div className="p-10 text-center">Loading product...</div>;
-    }
 
     if (!product) {
         return <div className="p-10 text-center">Product not found</div>;
